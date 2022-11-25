@@ -9,22 +9,26 @@ let Back2 = document.getElementById("Back2");
 
 let progress = document.getElementById("progress");
 
-Next1.onclick = function () {
+Next1.onclick = function (event) {
+  event.preventDefault();
   Form1.style.left = "-450px";
   Form2.style.left = "40px";
   progress.style.width = "240px";
 };
-Back1.onclick = function () {
+Back1.onclick = function (event) {
+  event.preventDefault();
   Form1.style.left = "40px";
   Form2.style.left = "450px";
   progress.style.width = "120px";
 };
-Next2.onclick = function () {
+Next2.onclick = function (event) {
+  event.preventDefault();
   Form2.style.left = "-450px";
   Form3.style.left = "40px";
   progress.style.width = "360px";
 };
-Back2.onclick = function () {
+Back2.onclick = function (event) {
+  event.preventDefault();
   Form2.style.left = "40px";
   Form3.style.left = "450px";
   progress.style.width = "240px";
